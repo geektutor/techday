@@ -6,6 +6,7 @@ import { DateIcon } from "./icons/DateIcon.react.svg";
 import { LocationIcon } from "./icons/LocationIcon.react.svg";
 import dayjs from "dayjs";
 import { isDateInPast } from "@/common/utils";
+import Link from "next/link";
 
 function EventCard({
   image = placeholderImg,

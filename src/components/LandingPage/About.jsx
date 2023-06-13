@@ -44,8 +44,9 @@ function About(props) {
             LEARN MORE ABOUT OUR STORY <ArrowRightIcon className="ml-4" />
           </Link>
         </div>
-        <div data-aos="fade-left" className=" my-12 lg:my-0">
+        <div className=" my-12 lg:my-0">
           <Image
+            data-aos="fade-left"
             width={576}
             height={400}
             src={aboutImg}
