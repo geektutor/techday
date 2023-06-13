@@ -1,10 +1,14 @@
-export const CloseIcon = () => (
+import React from "react";
+
+export const CloseIcon = React.forwardRef((props, ref) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="32"
     height="32"
     fill="none"
     viewBox="0 0 24 24"
+    {...props}
+    ref={ref}
   >
     <path
       fill="#ffffff"
@@ -13,4 +17,4 @@ export const CloseIcon = () => (
       clipRule="evenodd"
     ></path>
   </svg>
-);
+));

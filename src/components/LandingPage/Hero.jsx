@@ -1,15 +1,12 @@
 import Image from "next/image";
-import { Header } from "../Header";
 import { DonateButton } from "../DonateButton";
 
-const Hero = ({ title, description }) => {
+const Hero = () => {
   return (
     <section
       className="bg-black min-h-[500px] max-h-[800px] relative text-white"
       style={{ height: "calc(100vh - 80px)" }}
     >
-      <Header isHomepage title={title} description={description} />
-
       <figure className="md:hidden h-full w-full absolute z-[0] top-0">
         <Image
           src="/hero.jpg"
