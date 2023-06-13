@@ -26,7 +26,7 @@ const events = [
 
 function Events(props) {
   return (
-    <Container>
+    <Container className={"bg-lga"}>
       <h2 className="text-center fv-caps mb-2">Events</h2>
       <h4 className="text-center">
         Where next ARE WE CREATING THAT UNIQUE EXPREIENCE AND AWARENESS TO ALL

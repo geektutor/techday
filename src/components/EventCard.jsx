@@ -16,6 +16,7 @@ function EventCard({
   className,
 }) {
   const eventIsInPast = isDateInPast(eventDate);
+
   return (
     <div
       data-aos="flip-left"
@@ -24,7 +25,10 @@ function EventCard({
         className
       )}
     >
-      <Image className="mx-auto max-h-[400px]" src={image} alt={eventName} />
+      <Link href="/events/id">
+        <Image className="mx-auto max-h-[400px]" src={image} alt={eventName} />
+      </Link>
+
       <div className="p-4">
         <h3 className="text-2xl font-mono font-semibold mt-4 mb-7">
           {eventName}
@@ -37,7 +41,7 @@ function EventCard({
           <LocationIcon className="text-primary mr-3" /> {eventLocation}
         </p>
 
-        <button className="btn bg-primary hover:bg-primary-dark capitalize h-[41px] w-full max-w-[99px] mt-8">
+        <button className="btn bg-primary rounded-sm hover:bg-primary-dark capitalize h-[41px] w-full max-w-[99px] mt-8">
           {eventIsInPast ? "Ended" : "Upcoming"}
         </button>
       </div>
