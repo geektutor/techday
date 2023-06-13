@@ -1,14 +1,13 @@
 import Link from "next/link";
 import Container from "../Container";
-import { ArrowRightIcon } from "../icons/ArrowRightIcon.react.svg";
-import donateImg from "@/assets/images/donateimg.png";
+import donateImg from "@/assets/images/donateImg.png";
 import Image from "next/image";
 
 function Donate(props) {
   return (
     <Container className={"bg-techday-grey text-white"}>
       <div className="flex justify-between flex-col lg:flex-row my-[70px] items-center">
-        <div data-aos="fade-right"> 
+        <div data-aos="fade-right">
           <Image
             src={donateImg}
             alt="hands of diversed people placed together"

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Container from "../Container";
 import { ArrowRightIcon } from "../icons/ArrowRightIcon.react.svg";
-import aboutImg from "@/assets/images/aboutimg.png";
+import aboutImg from "@/assets/images/aboutImg.png";
 import Image from "next/image";
 
 const InfoBox = ({ title, description }) => (
