@@ -36,7 +36,9 @@ module.exports = {
       },
       colors: {
         primary: "#F77E00",
+        "primary-dark": "#D46D00",
         secondary: "#2E7304",
+        "secondary-dark": "#265F03",
         "techday-grey": "#353535",
         "techday-dark": "#1E1E1E",
       },
