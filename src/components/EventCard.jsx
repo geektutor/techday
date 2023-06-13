@@ -36,7 +36,7 @@ function EventCard({
           <LocationIcon className="text-primary mr-3" /> {eventLocation}
         </p>
 
-        <button className="btn bg-primary capitalize h-[41px] w-full max-w-[99px] mt-8">
+        <button className="btn bg-primary hover:bg-primary-dark capitalize h-[41px] w-full max-w-[99px] mt-8">
           {eventIsInPast ? "Ended" : "Upcoming"}
         </button>
       </div>

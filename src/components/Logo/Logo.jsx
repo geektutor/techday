@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Logo = () => {
   return (
-    <Link href="/">
+    <Link data-aos="fade-down" href="/">
       <Image
         width={192}
         height={48}

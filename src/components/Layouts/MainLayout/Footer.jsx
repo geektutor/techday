@@ -13,7 +13,9 @@ const Footer = () => {
       <section className="container flex flex-col gap-10">
         <section className="flex flex-col gap-4 items-center">
           <Logo />
-          <p className="m-0 text-sm">Inspiring Talents—Making a Difference</p>
+          <p data-aos="fade-down" className="m-0 text-sm">
+            Inspiring Talents—Making a Difference
+          </p>
         </section>
 
         <section className="flex justify-center">
@@ -37,6 +39,7 @@ const Footer = () => {
           />
 
           <button
+            data-aos="flip-right"
             title="Back to top"
             className="p-2 bg-orange-500 hover:bg-orange-600 ml-auto"
           >
@@ -45,7 +48,7 @@ const Footer = () => {
         </section>
 
         <section>
-          <p className="m-0 text-center text-sm">
+          <p data-aos="fade-down" className="m-0 text-center text-sm">
             &copy; 2023 Project774. All rights reserved.
           </p>
         </section>
@@ -58,11 +61,12 @@ export default Footer;
 
 const SocialLink = ({ icon, url, title }) => (
   <a
+    data-aos="flip-left"
     href={url}
     target="_blank"
     rel="noopener noreferrer"
     title={title}
-    className="p-2 bg-orange-500 hover:bg-orange-600"
+    className="p-2 bg-primary hover:bg-primary-dark"
   >
     {icon}
   </a>

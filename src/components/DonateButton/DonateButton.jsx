@@ -1,5 +1,12 @@
 const DonateButton = () => {
-  return <a className="px-8 py-2 bg-green-600 text-white">Donate</a>;
+  return (
+    <a
+      data-aos="fade-up"
+      className="px-8 py-2 bg-secondary text-white hover:bg-secondary-dark cursor-pointer"
+    >
+      Donate
+    </a>
+  );
 };
 
 export default DonateButton;

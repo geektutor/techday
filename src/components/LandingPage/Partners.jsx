@@ -15,14 +15,15 @@ const images = [image1, image2, image3, image4, image5, image6];
 function Partners(props) {
   return (
     <Container>
-      <h2 className="text-center fv-caps mb-2">Our Partners</h2>
-      <h4 className="text-center">
+      <h2 data-aos="fade-down" className="text-center fv-caps mb-2">Our Partners</h2>
+      <h4 data-aos="fade-down" className="text-center">
         Anything is possible when you have the right people there to support
         you. Meet some of our supporters.
       </h4>
       <div className="flex flex-wrap flex-col justify-center md:flex-row  md:justify-around my-[75px]">
         {images?.map((image) => (
           <Image
+            data-aos="fade-up"
             className="flex-shrink-0 mx-auto md:mx-5 my-5"
             src={image}
             height={60}

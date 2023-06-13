@@ -26,9 +26,9 @@ const Hero = () => {
       </figure>
 
       <section className="container relative h-full flex flex-col gap-6 items-center justify-center">
-        <h1>Tech Day</h1>
+        <h1 data-aos="fade-down">Tech Day</h1>
 
-        <p className="max-w-[480px] text-center">
+        <p data-aos="fade-up" className="max-w-[480px] text-center">
           A 1-day event aimed at driving awareness of the immense opportunity of
           the digital skill economy to indigenes and residents of the 774 Local
           Governments in Nigeria.

@@ -8,13 +8,13 @@ function Donate(props) {
   return (
     <Container className={"bg-techday-grey text-white"}>
       <div className="flex justify-between flex-col lg:flex-row my-[70px] items-center">
-        <div>
+        <div data-aos="fade-right"> 
           <Image
             src={donateImg}
             alt="hands of diversed people placed together"
           />
         </div>
-        <div className="max-w-[561px] lg:max-w-[405px]">
+        <div data-aos="fade-left" className="max-w-[561px] lg:max-w-[405px]">
           <h3 className="font-semibold text-[26px] mb-11 lg:mt-0 mt-11">
             Donate to support our cause
           </h3>
@@ -25,7 +25,8 @@ function Donate(props) {
           </p>
 
           <Link
-            className="btn bg-primary max-w-[160px] text-base rounded-sm mt-10"
+            data-aos="zoom-in"
+            className="btn bg-primary hover:bg-primary-dark max-w-[160px] text-base rounded-sm mt-10"
             href="/donate"
           >
             I WANT TO DONATE
