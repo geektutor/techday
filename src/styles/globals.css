@@ -14,3 +14,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.fv-caps {
+  font-variant: small-caps;
+}
