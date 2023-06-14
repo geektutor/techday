@@ -53,7 +53,7 @@ function EventOverviewPage({ source, frontMatter, page_url }) {
         }
       >
         <div className="flex-grow w-full max-w-[813px]">
-          <h1 className="font-medium text-[48px] leading-[57px]">
+          <h1 className="font-bold text-[32px] leading-[42px] md:text-[52px] md:leading-[62px]">
             {frontMatter?.title}
           </h1>
           <p className="mt-[24px] mb-11 text-xl">{frontMatter?.description}</p>
