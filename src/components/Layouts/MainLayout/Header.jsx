@@ -56,15 +56,15 @@ const MobileMenu = ({ isOpen, closeMenu }) => {
       className={cx(
         "bg-black fixed flex flex-col items-center justify-center md:hidden w-full top-0 h-screen",
         "ease-in-out duration-300",
-        { "opacity-100": isOpen },
-        { "opacity-0": !isOpen }
+        { "opacity-100 right-0": isOpen },
+        { "opacity-0 right-[-100%]": !isOpen }
       )}
     >
       <button onClick={closeMenu} className="absolute top-8 right-6">
         <CloseIcon />
       </button>
 
-      <section className="flex px-5 py-10">
+      <section className="flex" onClick={closeMenu}>
         <NavMenu isMobile />
       </section>
     </aside>
