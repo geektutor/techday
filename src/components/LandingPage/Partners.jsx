@@ -1,7 +1,4 @@
 import Container from "../Container";
-import placeholderImg from "@/assets/images/placeholderImg.png";
-import EventCard from "../EventCard";
-import { v4 } from "uuid";
 import image1 from "@/assets/images/partners/image1.png";
 import image2 from "@/assets/images/partners/image2.png";
 import image3 from "@/assets/images/partners/image3.png";
@@ -9,6 +6,7 @@ import image4 from "@/assets/images/partners/image4.png";
 import image5 from "@/assets/images/partners/image5.png";
 import image6 from "@/assets/images/partners/image6.png";
 import Image from "next/image";
+import { v4 } from "uuid";
 
 const images = [image1, image2, image3, image4, image5, image6];
 

@@ -1,3 +1,5 @@
+
+
 export function isDateInPast(dateString) {
   var currentDate = new Date();
   var inputDate = new Date(dateString);
@@ -8,3 +10,5 @@ export function isDateInPast(dateString) {
     return false;
   }
 }
+
+
