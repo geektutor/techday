@@ -9,7 +9,7 @@ import { NavMenu } from "@/components/NavMenu";
 
 const Footer = () => {
   const backToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window?.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
