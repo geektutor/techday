@@ -5,6 +5,7 @@
 @layer base {
   body {
     @apply text-black text-lg font-normal;
+    scroll-behavior: smooth;
   }
 
   h1 {

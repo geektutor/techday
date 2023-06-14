@@ -1,4 +1,5 @@
 import cx from "classnames";
+import Link from "next/link";
 import { v4 } from "uuid";
 
 function BreadCrumb({ items, className }) {
@@ -7,15 +8,15 @@ function BreadCrumb({ items, className }) {
       <ol className="list-reset flex">
         {items?.map((item, index) => (
           <li key={v4()}>
-            <a
-              href={item?.url}
+            <Link
+              href={item?.href}
               className={cx(
                 " font-medium transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary active:text-primary",
                 item?.isActive ? "text-black" : "text-primary"
               )}
             >
               {item.label}
-            </a>
+            </Link>
             {index !== items.length - 1 && (
               <span className="mx-2 text-neutral-500 dark:text-neutral-400">
                 {">"}

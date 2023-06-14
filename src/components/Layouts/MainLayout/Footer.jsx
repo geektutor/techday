@@ -1,8 +1,8 @@
+import BackToTopButton from "@/components/BackToTopButton";
 import {
   FacebookIcon,
-  TwitterIcon,
   InstagramIcon,
-  ChevronUpIcon,
+  TwitterIcon,
 } from "@/components/icons";
 import { Logo } from "@/components/Logo";
 import { NavMenu } from "@/components/NavMenu";
@@ -38,13 +38,7 @@ const Footer = () => {
             url="https://instagram.com/project774"
           />
 
-          <button
-            data-aos="flip-right"
-            title="Back to top"
-            className="p-2 bg-orange-500 hover:bg-orange-600 ml-auto"
-          >
-            <ChevronUpIcon />
-          </button>
+          <BackToTopButton />
         </section>
 
         <section>

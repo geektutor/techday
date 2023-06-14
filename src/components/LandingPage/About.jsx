@@ -13,7 +13,7 @@ const InfoBox = ({ title, description }) => (
 
 function About(props) {
   return (
-    <Container className={"py-9"}>
+    <Container id="about" className={"py-9"}>
       <h2 data-aos="fade-down" className="text-center fv-caps mb-2">
         About <span className="text-secondary">Project 774</span>
       </h2>

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function Donate(props) {
   return (
-    <Container className={"bg-techday-grey text-white bg-pr774"}>
+    <Container id="donate" className={"bg-techday-grey text-white bg-pr774"}>
       <div className="flex justify-between flex-col lg:flex-row my-[70px] items-center">
         <div data-aos="fade-right">
           <Image
