@@ -1,33 +1,10 @@
 import Container from "../Container";
-import placeholderImg from "@/assets/images/placeholderImg.png";
-import EventCard from "../EventCard";
-import { v4 } from "uuid";
 import Link from "next/link";
-
-const events = [
-  {
-    eventName: "Isiala Ngwa",
-    eventLocation: "Lorem, Lagos, Nigeria.",
-    eventDate: "2023-06-13T12:02:08.777Z",
-    image: placeholderImg,
-  },
-  {
-    eventName: "Isiala Ngwa",
-    eventLocation: "Lorem, Lagos, Nigeria.",
-    eventDate: "2023-06-13T12:02:08.777Z",
-    image: placeholderImg,
-  },
-  {
-    eventName: "Isiala Ngwa",
-    eventLocation: "Lorem, Lagos, Nigeria.",
-    eventDate: "2023-06-13T12:02:08.777Z",
-    image: placeholderImg,
-  },
-];
 
 function HostEvent(props) {
   return (
     <Container
+      id="volunteer"
       className={"min-h-[50vh] py-[100px] text-center"}
       containerClass={"text-center"}
     >

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import placeholderImg from "@/assets/images/placeholderImg.png";
 import cx from "classnames";
 import { DateIcon } from "./icons/DateIcon.react.svg";
 import { LocationIcon } from "./icons/LocationIcon.react.svg";
@@ -9,10 +8,12 @@ import { isDateInPast } from "@/common/utils";
 import Link from "next/link";
 
 function EventCard({
-  image = placeholderImg,
-  eventName,
+  eventBanner,
+  eventImage,
+  title,
   eventDate,
   eventLocation,
+  page_url,
   className,
 }) {
   const eventIsInPast = isDateInPast(eventDate);
@@ -25,14 +26,18 @@ function EventCard({
         className
       )}
     >
-      <Link href="/events/id">
-        <Image className="mx-auto max-h-[400px]" src={image} alt={eventName} />
+      <Link href={`/events/${page_url}`}>
+        <Image
+          width={341}
+          height={400}
+          className="mx-auto max-h-[300px] object-cover"
+          src={eventImage || eventBanner || "/placeholderImg.png"}
+          alt={title}
+        />
       </Link>
 
       <div className="p-4">
-        <h3 className="text-2xl font-mono font-semibold mt-4 mb-7">
-          {eventName}
-        </h3>
+        <h3 className="text-2xl font-mono font-semibold mt-4 mb-7">{title}</h3>
         <p className="flex items-center my-4">
           <DateIcon className="text-primary mr-3" />{" "}
           {dayjs(eventDate).format("ddd, MMM D, YYYY - hhA ")}
