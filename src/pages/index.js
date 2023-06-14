@@ -9,10 +9,19 @@ import { POSTS_PATH, postFilePaths } from "@/common/mdxUtils";
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
+import SEO from "@/components/Seo";
 
 export default function Home({ events }) {
   return (
     <>
+      <SEO
+        title={"Project744"}
+        description={`A 1-day event aimed at driving awareness of the immense opportunity of
+          the digital skill economy to indigenes and residents of the 774 Local
+          Governments in Nigeria.`}
+          page_url=""
+          image={"/project744.png"}
+      />
       <Hero />
       <About />
       <Events events={events} />
