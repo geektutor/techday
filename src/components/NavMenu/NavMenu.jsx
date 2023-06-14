@@ -8,6 +8,7 @@ const NavMenu = ({ isFooter = false, isMobile = false }) => {
       <NavMenuItem label="Blog" url="/blog" />
       <NavMenuItem label="Events" url="/events" />
       <NavMenuItem label="Gallery" url="/gallery" />
+      <NavMenuItem label="Volunteer" url="/volunteer" />
 
       {isFooter && <NavMenuItem label="Volunteer" url="/volunteer" />}
 
@@ -18,4 +19,4 @@ const NavMenu = ({ isFooter = false, isMobile = false }) => {
 
 export default NavMenu;
 
-const NavMenuItem = ({ label, url }) => <Link href={url} className="hover:text-orange-500 ease-in-out duration-200">{label}</Link>;
+const NavMenuItem = ({ label, url }) => <Link href={url} className="hover:text-primary font-medium ease-in-out duration-200">{label}</Link>;

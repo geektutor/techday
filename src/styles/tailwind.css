@@ -40,5 +40,12 @@
     background-image: url("/lgas.png");
     background-repeat: no-repeat;
     background-position: left top;
+    background-size: contain;
+  }
+
+  .bg-pr774 {
+    background-image: url("/pr774.svg");
+    background-repeat: no-repeat;
+    background-position: center 8%;
   }
 }

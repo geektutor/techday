@@ -6,10 +6,19 @@ import heroImage from "@/assets/images/overviewheader.png";
 import { DateIcon } from "@/components/icons/DateIcon.react.svg";
 import { LocationIcon } from "@/components/icons/LocationIcon.react.svg";
 import dayjs from "dayjs";
+import BreadCrumb from "@/components/BreadCrumnb";
 
 function EventOverviewPage(props) {
   return (
     <>
+      <Container containerClass={"px-0 pt-[170px] pb-[31px]"}>
+        <BreadCrumb
+          items={[
+            { label: "Events", href: "/" },
+            { label: "Isiala Ngwa", isActive: true, href: "/events/id" },
+          ]}
+        />
+      </Container>
       <Container containerClass={"bg-[#DBDBDB]"}>
         <Image className="mx-auto" height={424} src={heroImage} alt="header" />
       </Container>
