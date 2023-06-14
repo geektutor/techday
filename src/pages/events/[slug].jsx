@@ -24,7 +24,7 @@ function EventOverviewPage({ source, frontMatter, page_url }) {
         image={frontMatter?.eventBanner}
         page_url={page_url}
       />
-      <Container containerClass={"px-0 pt-[120px] pb-[31px]"}>
+      <Container containerClass={"md:px-0 pt-[120px] pb-[31px]"}>
         <BreadCrumb
           items={[
             { label: "Events", href: "/#events" },
@@ -49,11 +49,11 @@ function EventOverviewPage({ source, frontMatter, page_url }) {
       <Container
         className={"py-8"}
         containerClass={
-          "px-0 flex items-start justify-between lg:space-x-14 flex-col lg:flex-row"
+          "md:px-0 flex items-start justify-between lg:space-x-14 flex-col lg:flex-row"
         }
       >
         <div className="flex-grow w-full max-w-[813px]">
-          <h1 className="font-medium text-[48px] leading-[57px]">
+          <h1 className="font-bold text-[32px] leading-[42px] md:text-[52px] md:leading-[62px]">
             {frontMatter?.title}
           </h1>
           <p className="mt-[24px] mb-11 text-xl">{frontMatter?.description}</p>
