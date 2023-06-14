@@ -1,17 +1,9 @@
 import BackToTopButton from "@/components/BackToTopButton";
-import {
-  FacebookIcon,
-  InstagramIcon,
-  TwitterIcon,
-} from "@/components/icons";
+import { FacebookIcon, InstagramIcon, TwitterIcon } from "@/components/icons";
 import { Logo } from "@/components/Logo";
 import { NavMenu } from "@/components/NavMenu";
 
 const Footer = () => {
-  const backToTop = () => {
-    window?.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <footer className="bg-black text-white py-10">
       <section className="container flex flex-col gap-10">
