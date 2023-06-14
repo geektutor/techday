@@ -8,6 +8,10 @@ import { Logo } from "@/components/Logo";
 import { NavMenu } from "@/components/NavMenu";
 
 const Footer = () => {
+  const backToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="bg-black text-white py-10">
       <section className="container flex flex-col gap-10">
@@ -42,6 +46,7 @@ const Footer = () => {
             data-aos="flip-right"
             title="Back to top"
             className="p-2 bg-orange-500 hover:bg-orange-600 ml-auto"
+            onClick={backToTop}
           >
             <ChevronUpIcon />
           </button>
