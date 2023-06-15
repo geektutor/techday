@@ -59,7 +59,7 @@ function EventOverviewPage({ source, frontMatter, page_url }) {
           <p className="mt-[24px] mb-11 text-xl">{frontMatter?.description}</p>
           <p className="flex items-center my-6">
             <DateIcon className="text-primary mr-3" />{" "}
-            {dayjs(frontMatter?.eventDate).format("ddd, MMM D, YYYY - hhA ")}
+            {dayjs(frontMatter?.eventDate).format("ddd, MMM D, YYYY - 10A ")}
           </p>
           <p className="flex items-center mt-6 mb-11">
             <LocationIcon className="text-primary mr-3" />{" "}
