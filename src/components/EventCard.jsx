@@ -40,7 +40,7 @@ function EventCard({
         <h3 className="text-2xl font-mono font-semibold mt-4 mb-7">{title}</h3>
         <p className="flex items-center my-4">
           <DateIcon className="text-primary mr-3" />{" "}
-          {dayjs(eventDate).format("ddd, MMM D, YYYY - hhA ")}
+          {dayjs(eventDate).format("ddd, MMM D, YYYY - 10A ")}
         </p>
         <p className="flex items-center">
           <LocationIcon className="text-primary mr-3" /> {eventLocation}
