@@ -35,21 +35,22 @@ function EventCard({
           alt={title}
         />
       </Link>
+     <Link href={`/events/${page_url}`}>
+        <div className="p-4">
+          <h3 className="text-2xl font-mono font-semibold mt-4 mb-7">{title}</h3>
+          <p className="flex items-center my-4">
+            <DateIcon className="text-primary mr-3" />{" "}
+            {dayjs(eventDate).format("ddd, MMM D, YYYY - 10A ")}
+          </p>
+          <p className="flex items-center">
+            <LocationIcon className="text-primary mr-3" /> {eventLocation}
+          </p>
 
-      <div className="p-4">
-        <h3 className="text-2xl font-mono font-semibold mt-4 mb-7">{title}</h3>
-        <p className="flex items-center my-4">
-          <DateIcon className="text-primary mr-3" />{" "}
-          {dayjs(eventDate).format("ddd, MMM D, YYYY - hhA ")}
-        </p>
-        <p className="flex items-center">
-          <LocationIcon className="text-primary mr-3" /> {eventLocation}
-        </p>
-
-        <button className="btn bg-primary rounded-sm hover:bg-primary-dark capitalize h-[41px] w-full max-w-[99px] mt-8">
-          {eventIsInPast ? "Ended" : "Upcoming"}
-        </button>
-      </div>
+          <button className="btn bg-primary rounded-sm hover:bg-primary-dark capitalize h-[41px] w-full max-w-[99px] mt-8">
+            {eventIsInPast ? "Ended" : "Upcoming"}
+          </button>
+        </div>
+      </Link>
     </div>
   );
 }

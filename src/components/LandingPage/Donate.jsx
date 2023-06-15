@@ -8,7 +8,7 @@ function Donate(props) {
     <Container id="donate" className={"bg-techday-grey text-white bg-pr774"}>
       <div className="flex justify-between flex-col lg:flex-row my-[70px] items-center">
         <div data-aos="fade-right">
-          <Image
+          <Image className="donate_img"
             src={donateImg}
             alt="hands of diversed people placed together"
           />
