@@ -39,7 +39,7 @@ function About(props) {
 
           <Link
             href="/"
-            className="text-smh3 flex text-center mb-5 md:text-left items-center font-semibold text-secondary hover:text-secondary-dark hover:scale-105"
+            className="text-smh3 flex text-center mb-5 md:text-left items-center font-semibold text-secondary hover:text-secondary-dark hover:scale-105" style={{fontSize: "12px"}}
           >
             LEARN MORE ABOUT OUR STORY <ArrowRightIcon className="ml-4" />
           </Link>
