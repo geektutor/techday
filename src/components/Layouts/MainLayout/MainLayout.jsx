@@ -5,13 +5,11 @@ import Header from "./Header";
 
 function MainLayout({ children }) {
   return (
-    <>
+    <section className={cx(barlow.className, barlow.variable)}>
       <Header />
-      <main className={cx(barlow.className, barlow.variable, "min-h-screen")}>
-        {children}
-      </main>
+      <main className={cx("min-h-screen")}>{children}</main>
       <Footer />
-    </>
+    </section>
   );
 }
 

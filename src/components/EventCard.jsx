@@ -1,20 +1,23 @@
 import React from "react";
 import Image from "next/image";
-import placeholderImg from "@/assets/images/placeholderImg.png";
 import cx from "classnames";
 import { DateIcon } from "./icons/DateIcon.react.svg";
 import { LocationIcon } from "./icons/LocationIcon.react.svg";
 import dayjs from "dayjs";
 import { isDateInPast } from "@/common/utils";
+import Link from "next/link";
 
 function EventCard({
-  image = placeholderImg,
-  eventName,
+  eventBanner,
+  eventImage,
+  title,
   eventDate,
   eventLocation,
+  page_url,
   className,
 }) {
   const eventIsInPast = isDateInPast(eventDate);
+
   return (
     <div
       data-aos="flip-left"
@@ -23,23 +26,31 @@ function EventCard({
         className
       )}
     >
-      <Image className="mx-auto max-h-[400px]" src={image} alt={eventName} />
-      <div className="p-4">
-        <h3 className="text-2xl font-mono font-semibold mt-4 mb-7">
-          {eventName}
-        </h3>
-        <p className="flex items-center my-4">
-          <DateIcon className="text-primary mr-3" />{" "}
-          {dayjs(eventDate).format("ddd, MMM D, YYYY - hhA ")}
-        </p>
-        <p className="flex items-center">
-          <LocationIcon className="text-primary mr-3" /> {eventLocation}
-        </p>
+      <Link href={`/events/${page_url}`}>
+        <Image
+          width={341}
+          height={400}
+          className="mx-auto max-h-[300px] object-cover"
+          src={eventImage || eventBanner || "/placeholderImg.png"}
+          alt={title}
+        />
+      </Link>
+     <Link href={`/events/${page_url}`}>
+        <div className="p-4">
+          <h3 className="text-2xl font-mono font-semibold mt-4 mb-7">{title}</h3>
+          <p className="flex items-center my-4">
+            <DateIcon className="text-primary mr-3" />{" "}
+            {dayjs(eventDate).format("ddd, MMM D, YYYY - 10A ")}
+          </p>
+          <p className="flex items-center">
+            <LocationIcon className="text-primary mr-3" /> {eventLocation}
+          </p>
 
-        <button className="btn bg-primary capitalize h-[41px] w-full max-w-[99px] mt-8">
-          {eventIsInPast ? "Ended" : "Upcoming"}
-        </button>
-      </div>
+          <button className="btn bg-primary rounded-sm hover:bg-primary-dark capitalize h-[41px] w-full max-w-[99px] mt-8">
+            {eventIsInPast ? "Ended" : "Upcoming"}
+          </button>
+        </div>
+      </Link>
     </div>
   );
 }
