@@ -3,7 +3,7 @@ import Container from "../Container";
 import donateImg from "@/assets/images/donateImg.png";
 import Image from "next/image";
 
-function Donate(props) {
+function Donate() {
   return (
     <Container id="donate" className={"bg-techday-grey text-white bg-pr774"}>
       <div className="flex justify-between flex-col lg:flex-row my-[70px] items-center">
@@ -26,7 +26,7 @@ function Donate(props) {
           <Link
             data-aos="zoom-in"
             className="btn bg-primary hover:bg-primary-dark max-w-[160px] text-base rounded-sm mt-10"
-            href="/donate"
+            href="https://bit.ly/host-tech-day"
           >
             I WANT TO DONATE
           </Link>

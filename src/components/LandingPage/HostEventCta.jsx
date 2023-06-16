@@ -22,7 +22,7 @@ function HostEvent(props) {
       <Link
         data-aos="zoom-in"
         className="btn bg-primary hover:bg-primary-dark text-center mx-auto max-w-[144px] text-base rounded-sm mt-10"
-        href="/donate"
+        href="https://bit.ly/host-tech-day"
       >
         I WANT TO HOST
       </Link>
