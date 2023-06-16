@@ -8,10 +8,7 @@ const NavMenu = ({ isFooter = false, isMobile = false }) => {
       <NavMenuItem label="Blog" url="/#" />
       <NavMenuItem label="Events" url="/#events" />
       <NavMenuItem label="Gallery" url="/#gallery" />
-      <NavMenuItem label="Volunteer" url="/#volunteer" />
-
-      {isFooter && <NavMenuItem label="Volunteer" url="/#volunteer" />}
-
+      <NavMenuItem label="Volunteer" url="https://bit.ly/td-volunteer" />
       {(isFooter || isMobile) && <NavMenuItem label="Donate" url="/#donate" />}
     </nav>
   );
@@ -19,4 +16,12 @@ const NavMenu = ({ isFooter = false, isMobile = false }) => {
 
 export default NavMenu;
 
-const NavMenuItem = ({ label, url }) => <Link scroll={false} href={url} className="hover:text-primary font-medium ease-in-out duration-200">{label}</Link>;
+const NavMenuItem = ({ label, url }) => (
+  <Link
+    scroll={false}
+    href={url}
+    className="hover:text-primary font-medium ease-in-out duration-200"
+  >
+    {label}
+  </Link>
+);
